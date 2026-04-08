@@ -43,7 +43,7 @@ function App() {
 
     setRounds(prev => prev + 1)
 
-    // update scores + streak
+ 
     if (winner === 'User') {
       setUserScore(prev => prev + 1)
       setStreak(prev => prev + 1)
@@ -57,7 +57,7 @@ function App() {
       setResult('Draw 😐')
     }
 
-    // update history (latest first)
+
     const roundData = {
       user,
       comp,
@@ -108,7 +108,7 @@ function App() {
         🔄 Reset Game
       </button>
 
-      {/* Move History */}
+
       <div style={{ marginTop: '30px' }}>
         <h2>📜 Move History</h2>
 
